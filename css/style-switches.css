@@ -1,0 +1,95 @@
+:root{
+    --bg-color:#010711;
+    --second-bg-color:#020814;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+
+
+.style-switcher{
+    position: fixed;
+    right: 0;
+    top: 7rem;
+    padding: 1rem;
+    width: 15%;
+    border: 0.2rem solid var(--text-color);
+    background: var(--second-bg-color);
+    z-index: 209;
+    border-radius: 0.8rem;
+    transition: all 0.3s ease;
+    transform: translateX(100%);
+}
+
+.style-switcher.open{
+    transform: translateX(-3rem);
+}
+.style-switcher .s-icon{
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+    font-size:2.5rem;
+    background: var(--bg-color);
+    color: var(--text-color);
+    right: 100%;
+    border: 0.2rem solid var(--text-color);
+    margin-right: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+
+}
+
+.style-switcher .s-icon i{
+    line-height: 50%;
+}
+
+.style-switcher .style-switcher-toggler{
+    top: 0;
+}
+
+.style-switcher .day-night{
+    top: 5rem;
+}
+
+.style-switcher h4{
+    margin: 0 0 0.2rem;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.style-switcher .colors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.style-switcher .colors span{
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border:0.2rem solid var(--text-color); ;
+}
+
+.style-switcher .color-1{
+    background: #ec1839;
+}
+
+.style-switcher .color-2{
+    background: #fa5b0f;
+}
+
+.style-switcher .color-3{
+    background: #37b182;
+}
+
+.style-switcher .color-4{
+    background: #1854ba;
+}
+
+.style-switcher .color-5{
+    background: #f021b2;
+}
